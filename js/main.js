@@ -72,34 +72,30 @@
     // nav
 
 
- $(document).ready(function () {
-      // Add an event listener for when the navbar is shown
-      $('.navbar-collapse').on('show.bs.collapse', function () {
-        // Show the close button and hide the toggle button
-        $('#navbarClose').show();
-        $('.navbar-toggler').hide();
-      });
-      // Add an event listener for when the close button is clicked
-      $('#navbarClose').on('click', function () {
-        // Hide the navbar
-        $('.navbar-collapse').collapse('hide');
-      });
+ $$(document).ready(function() {
+    // Toggle mobile menu visibility
+    $('.hamberger-button').click(function() {
+        $('.mobile-menu').slideToggle();
     });
 
-    
-    $(".header-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        items: 1,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
+    // Close mobile menu when a menu item is clicked
+    $('.mobile-menu a').click(function() {
+        $('.mobile-menu').slideUp();
     });
 
+    // Close mobile menu when clicking outside the menu
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.mobile-menu').length && !$(e.target).closest('.hamberger-button').length) {
+            $('.mobile-menu').slideUp();
+        }
+    });
+
+    // Prevent menu close when clicking on the menu itself
+    $('.mobile-menu').click(function(e) {
+        e.stopPropagation();
+    });
+});
+ 
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -192,47 +188,9 @@ function odometerInit() {
     });
 
     //  Gallary
-
-    // about total count
-    sal({
-        selector: '.sal-animate-new',
-        threshold: 0.5, // Adjust as needed
-        once: true
-    });
-    // about total count
-
-
-                                        //   cousre js
-                                        document.addEventListener("DOMContentLoaded", function () {
-                                            // Initialize Scroll Animation for the custom category grid elements
-                                            sal({
-                                                selector: '.custom-categories .sal-animate',
-                                                threshold: 0.5, // Adjust as needed
-                                                once: true
-                                            });
-                                        });
                                         
                                         //   cousre js
 
-
-                                        // study-india
-
-                                        $(document).ready(function () {
-                                            $('.magnific-popup').magnificPopup({
-                                                type: 'iframe',
-                                                iframe: {
-                                                    patterns: {
-                                                        youtube: {
-                                                            index: 'youtube.com/',
-                                                            id: 'v=',
-                                                            src: 'https://www.youtube.com/embed/%id%?autoplay=1'
-                                                        }
-                                                    }
-                                                }
-                                            });
-                                        });
-                                    
-                                        // study-india
 
                                         // footer signup button
                                         function clearPlaceholder(element) {

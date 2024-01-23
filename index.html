@@ -51,9 +51,10 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://cdn.rawgit.com/HubSpot/odometer/0.4.8/odometer.js"></script>
-    <style>
-        
-    </style>
+    <script>
+        sal();
+      </script>
+    
 
 </head>
 
@@ -154,18 +155,14 @@
     </header>
 
     <!-- header -->
-
-
-
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
                 <h2 class="m-0 text-primary">
-                   <img src="img/educaller.png" alt="" style="height: 3rem;">edcaller
+                    <img src="img/educaller.png" alt="" style="height: 3rem;">edcaller
                 </h2>
             </a>
-            <button id="navbarToggleBtn"  type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -174,8 +171,7 @@
                         <a href="index.html" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                            target="_blank">About</a>
+                        <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" target="_blank">About</a>
                         <div class="dropdown-menu fade-down m-0">
                             <a href="about.html" class="dropdown-item">Introduction</a>
                             <a href="testimonial.html" class="dropdown-item">Company Profile</a>
@@ -188,7 +184,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="courses.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Course</a>
+                        <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" target="_blank">Course</a>
                         <div class="dropdown-menu fade-down m-0">
                             <a href="BBA.html" class="dropdown-item">MBBS (NEET UG)</a>
                             <a href="BBA.html" class="dropdown-item">MD/MS (NEET PG)</a>
@@ -199,7 +195,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" target="_blank">Pages</a>
                         <div class="dropdown-menu fade-down m-0">
                             <a href="team.html" class="dropdown-item">Our Team</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
@@ -221,13 +217,18 @@
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
+                    <!-- Add more navbar items as needed -->
                 </ul>
+                
                 <a href="" class="btn btn-primary py-4 px-lg-3 d-none d-lg-block">Enquire-now<i
                         class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </div>
     </nav>
+    
 
+
+   
     <marquee width="100%" behavior="scroll" direction="left">
         <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px ">
             <a href="https://viteee.vit.ac.in/" target="_blank">VIT VELLORE BTECH ADMISSION OPEN FOR 2024</a>
@@ -260,64 +261,50 @@
         </h6>
     </marquee>
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(24, 29, 56, 0.7)">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">
-                                    Best Online Courses
-                                </h5>
-                                <h1 class="display-3 text-white animated slideInDown">
-                                    Make Smart Decisions With Our Career Counsellors.
-                                </h1>
-                                <p class="fs-5 text-white mb-4 pb-2">
-                                    "Education is the Most Powerfull weapon which you can use to
-                                    change the world" - Nelson Mandela
-                                </p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
-                                    More</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
-                            </div>
-                        </div>
+
+    <!-- crausal -->
+    <div class="container" id="ban">
+        <div class="row row--45 ">
+            <div class="col-lg-6">
+                <div class="banner-content">
+                    <h1 class="title sal-animate" data-sal-delay="100" data-sal="slide-up" data-sal-duration="1000" >Make Smart Decisions <br> With Our <span class="color-secondary">Career Counsellors. </span></h1>
+                    <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000" class="sal-animate">"Education is the Most
+                        Powerfull weapon which you can use to change the world" - Nelson Mandela</p>
+                    <h4>Merit, Management &amp; NRI Quota Based Direct Admission in India.</h4>
+                    <div class="banner-btn sal-animate" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
+                        <a href="study-india.html" target="_blank" class="edu-btn">Admission in India
+                            <i class="fa-solid fa-arrow-right"></i>
+                        <a href="join-google-meet.php" target="_blank" class="edu-btn">Join Google Meet</a>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-2.jpg" alt="" />
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(24, 29, 56, 0.7)">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">
-                                    Best Online Courses
-                                </h5>
-                                <h1 class="display-3 text-white animated slideInDown">
-                                    Get educaller  Online From Your Home
-                                </h1>
-                                <p class="fs-5 text-white mb-4 pb-2">
-                                    Vero elitr justo clita lorem. Ipsum dolor at sed stet sit
-                                    diam no. Kasd rebum ipsum et diam justo clita et kasd rebum
-                                    sea sanctus eirmod elitr.
-                                </p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
-                                    More</a>
-                                <a href="join-google-meet.php"
-                                    class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+            <div class="col-lg-6">
+                <div class="banner-gallery">
+                    <div class="thumbnail thumbnail-1 sal-animate" data-sal-delay="500" data-sal="slide-up" data-sal-duration="1000">
+                        <img src="img/girl-2.jpg" alt="Aaryash Educational Image" title="Aaryash Educational Image">
+                    </div>
+                    <div class="thumbnail thumbnail-2 sal-animate" data-sal-delay="500" data-sal="slide-down" data-sal-duration="1000">
+                        <img src="img/man-1.jpg" alt="Aaryash Educational Image" title="Aaryash Educational Image">
+                    </div>
+                    <div class="online-support sal-animate" data-sal-delay="600" data-sal="slide-right" data-sal-duration="1000">
+                        <div class="inner">
+                            <div class="icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="content">
+                                <span class="subtitle">Whatsapp Chat </span>
+                                <h4 class="title"><a href="https://api.whatsapp.com/send?phone=917003145284" target="_blank">07003145284</a></h4>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
-    <!-- Carousel End -->
+    <!-- crausal -->
+
+
     <!-- services -->
 
     <!-- heading -->
@@ -1194,6 +1181,8 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sal.js"></script>
+
     <!-- Include the odometer.js library -->
 
     <!-- <script src="path/to/your/main.js"></script> -->
