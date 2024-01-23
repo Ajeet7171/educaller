@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>eLEARNING - eLearning HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.rawgit.com/HubSpot/odometer/0.4.8/odometer.js"></script>
+    <!-- Add these links to your head section -->
+<link rel="stylesheet" href="path/to/magnific-popup.css">
+<script src="path/to/jquery.min.js"></script>
+<script src="path/to/jquery.magnific-popup.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- header -->
+    <a href="https://wa.me/your-whatsapp-number" class="whatsapp-icon" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Pop form -->
+    <div class="modal fade" id="inquiryModal" tabindex="-1" role="dialog" aria-labelledby="inquiryModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="inquiryModalLabel">Inquiry Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Your form content goes here -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" required />
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                No Thanks
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop form -->
+    <header class="edu-header header-style-3">
+        <div class="header-top-bar">
+            <div class="container">
+                <div class="header-top">
+                    <div class="header-top-left">
+                        <ul class="header-info">
+                            <li><a href="join-our-seminar.php">Join Our Seminar</a></li>
+                            <li><a href="join-our-webinar.php">Join Our Webinar</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-top-right">
+                        <ul class="header-info">
+                            <li>
+                                <a href="tel:+917003145284"><i class="fas fa-phone"></i> Call: 7003145284 /
+                                    9311810144</a>
+                            </li>
+                            <li>
+                                <a href="mailto:aaryashedu.in@gmail.com"><i class="fas fa-envelope"></i> Email:
+                                    aaryashedu.in@gmail.com</a>
+                            </li>
+                            <li class="social-icon">
+                                <a href="https://www.facebook.com/aaryashedu.in" target="_blank"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/aaryashedu.in7/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/channel/UCF5QyfvDdK4NWY2CfjJygvw" target="_blank"><i
+                                        class="fab fa-youtube"></i></a>
+                                <a href="https://t.me/aaryashedu" target="_blank" class="color-linkd"><i
+                                        class="fab fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header -->
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary">
+                   <img src="img/educaller.png" alt="" style="height: 3rem;">edcaller
+                </h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                            target="_blank">About</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="about.html" class="dropdown-item">Introduction</a>
+                            <a href="testimonial.html" class="dropdown-item">Company Profile</a>
+                            <a href="mission.html" class="dropdown-item">Mission and Vision</a>
+                            <a href="service.html" class="dropdown-item">Our Service</a>
+                            <a href="team.html" class="dropdown-item">Our Team</a>
+                            <a href="contact.html" class="dropdown-item">Director Message</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="courses.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Course</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="BBA.html" class="dropdown-item">MBBS (NEET UG)</a>
+                            <a href="BBA.html" class="dropdown-item">MD/MS (NEET PG)</a>
+                            <a href="BBA.html" class="dropdown-item">Engineering</a>
+                            <a href="BBA.html" class="dropdown-item">Management</a>
+                            <a href="BBA.html" class="dropdown-item">Law</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="team.html" class="dropdown-item">Our Team</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="BBA.html" class="dropdown-item">BBA/BMS</a>
+                            <a href="BBA.html" class="dropdown-item">Nursing</a>
+                            <a href="BBA.html" class="dropdown-item">Paramedical</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="study-india.html" class="nav-link">Study India</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="study-abroad.html" class="nav-link">Study Abroad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallary.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <a href="" class="btn btn-primary py-4 px-lg-3 d-none d-lg-block">Enquire-now<i
+                        class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <marquee width="100%" behavior="scroll" direction="left">
+        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px">
+            <a href="https://viteee.vit.ac.in/" target="_blank">VIT VELLORE BTECH ADMISSION OPEN FOR 2024</a>
+            ||
+        </h6>
+    </marquee>
+
+    <marquee width="100%" behavior="scroll" direction="left">
+        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px">
+            <a href="https://www.pessat.com/Welcome.aspx" target="_blank">PES UNIVERSITY, BANGALORE BTECH ADMISSION
+                OPEN, LAST DATE 15 MARCH
+                2024</a>
+            ||
+        </h6>
+    </marquee>
+
+    <marquee width="100%" behavior="scroll" direction="left">
+        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px">
+            <a href="https://apply.manipal.edu/" target="_blank">MANIPAL BTECH ADMISSION OPEN FOR 2024</a>
+            ||
+        </h6>
+    </marquee>
+
+    <marquee width="100%" behavior="scroll" direction="left">
+        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px">
+            <a href="https://www.bitsadmission.com/bitsatmain.aspx?id=11012016" target="_blank">BITS Pilani BTECH
+                ADMISSION OPEN FOR 2024. Deadline 11th April
+                2024</a>
+            ||
+        </h6>
+    </marquee>
+
+    <!-- country detaila -->
+
+    <div class="container-country">
+        <div class="breadcrumb-inner"><br><br>
+            <h4 style="text-align: center;"><a href="study-mbbs-abroad.php">Country Details</a></h4>
+            <div class="">
+                <h2 style="text-align: center;">MBBS in India</h2>
+            </div>
+            <div class="rating" style="text-align: center; color: blue;">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 style="text-align: center; color: crimson;">(1220 Rating)</h4>
+        </div>
+    </div>
+    <!-- country detaila -->
+    <!-- detsils -->
+    <div class="container">
+        <div class="row row--30">
+            <div class="col-lg-4">
+                <div class="course-sidebar-3">
+                    <div class="edu-course-widget widget-course-summery">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <img src="img/youtube.jpg" alt="Courses">
+                                <a href="https://www.youtube.com/@UTxKiLLeR" class="play-btn magnific-popup"><i class=""></i></a>
+
+                            </div>
+                            <div class="content">
+                                <h4 class="widget-title">Details About MBBS in India</h4>
+                                <ul class="course-item">
+                                    <li>
+                                        <span class="label"><i class="icon-60"></i>Yearly Fee:</span>
+                                        <span class="value price">Apx - 5000 to 26 L</span>
+                                    </li>
+                                    <li>
+                                        <span class="label"><i class="icon-62"></i>Type:</span>
+                                        <span class="value">GOVT/PVT/DEEMED</span>
+                                    </li>
+                                    <li>
+                                        <span class="label"><i class="fa-regular fa-clock"></i>Duration:</span>
+                                        <span class="value">5/6 Year</span>
+                                    </li>
+                                    <li>
+                                        <span class="label"><svg xmlns="http://www.w3.org/2000/svg" width="19.84"
+                                                height="17.75" viewBox="0 0 19.84 17.75"
+                                                data-inject-url="https://aaryashedu.in/assets/images/svg-icons/books.svg"
+                                                class="svgInject">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: #181818;
+                                                            fill-rule: evenodd;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <path class="cls-1"
+                                                    d="M1244.3,708.6c-0.57-1.6-1.78-.867-1.43-1.008l-2.52,1.008v-1.314a0.719,0.719,0,0,0-.65-0.658h-9.86a0.6,0.6,0,0,0-.66.658v16.43a0.6,0.6,0,0,0,.66.657h9.86a0.6,0.6,0,0,0,.65-0.657v-11.83s3.14,8.9,3.82,10.812a1.069,1.069,0,0,0,1.44.361s2.23-.89,3.01-1.206a1,1,0,0,0,.28-1.423Zm-3.79,1.262,2.59-1.069,1.01,2.695-2.35,1.016Zm-1.47,2.024h-3.29v-3.943h3.29v3.943Zm-4.6-3.943v3.943h-3.95v-3.943h3.95Zm-3.95,5.258h3.95v9.858h-3.95V713.2Zm5.26,0h3.29v9.858h-3.29V713.2Zm6.46,0.388,2.45-.933,3.06,8.347-2.45.994Z"
+                                                    transform="translate(-1229.19 -706.625)"
+                                                    style="stroke-dasharray: 208, 210; stroke-dashoffset: 0;"></path>
+                                            </svg>Semester:</span>
+                                        <span class="value">9</span>
+                                    </li>
+                                    <li>
+                                        <span class="label"><i class="icon-63"></i>Enrolllment:</span>
+                                        <span class="value">Yearly</span>
+                                    </li>
+                                    <li>
+                                        <span class="label"><i class="icon-59"></i>Language:</span>
+                                        <span class="value">English</span>
+                                    </li>
+                                    <li>
+                                        <span class="label"><i class="icon-64"></i>Degree:</span>
+                                        <span class="value">Yes</span>
+                                    </li>
+                                </ul>
+                                <div class="read-more-btn">
+                                    <a href="online-enquiry.php" class="edu-btn">Apply Online <i class="icon-4"></i></a>
+                                </div>
+                                <div class="share-area">
+                                    <h4 class="title">Share On:</h4>
+                                    <ul class="social-share">
+                                        <li><a href="https://t.me/aaryashedu" target="_blank" class="color-yt"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                        <li><a href="https://www.facebook.com/aaryashedu.in" target="_blank"
+                                                class="color-fb"><i class="fa-brands fa-facebook"></i></a></li>
+                                        <li><a href="https://www.instagram.com/aaryashedu.in7/" target="_blank"
+                                                class="color-ig"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCF5QyfvDdK4NWY2CfjJygvw"
+                                                target="_blank" class="color-yt"><i class="fa-brands fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-8">
+                <div class="course-details-content">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="overview-tab" data-bs-toggle="tab"
+                                data-bs-target="#overview" type="button" role="tab" aria-controls="overview"
+                                aria-selected="true">Education in India</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="carriculam-tab" data-bs-toggle="tab"
+                                data-bs-target="#carriculam" type="button" role="tab" aria-controls="carriculam"
+                                aria-selected="false">Indian Higher Education</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="instructor-tab" data-bs-toggle="tab"
+                                data-bs-target="#instructor" type="button" role="tab" aria-controls="instructor"
+                                aria-selected="false">Benefits of Study in India</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review"
+                                type="button" role="tab" aria-controls="review" aria-selected="false">Reviews</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel"
+                            aria-labelledby="overview-tab">
+                            <div class="course-tab-content">
+                                <div class="course-overview">
+                                    <h3 class="heading-title">About India Short Details</h3>
+                                    <p>India has been a major seat of learning for thousands of years. The
+                                        country was home to both Takshashila – the first university in the
+                                        world, and to the inventor of the digit 0 – Äryabhata. Albert Einstein
+                                        once said:, “we owe a lot to the Indians who taught us how to count,
+                                        without which no worthwhile scientific discovery could have been made”.
+                                    </p>
+                                    <p>Today, India is known as a communication hub, and has become popular with
+                                        international students from all over the world. It is highly attractive
+                                        due to its forward thinking, its popularity with large multinational
+                                        companies, and also due to English being the common language of
+                                        communication. According to Peter Drucker, “India is become a power
+                                        house very fast, the medical school in New Delhi is now perhaps the best
+                                        in the world. The technical graduates of Indian Institute of Technology,
+                                        Bangalore are as good as any in the world. Also India has 150 million
+                                        people for whom English is their main language so India is indeed
+                                        becoming a knowledge center”.</p>
+                                    <p>It is a developing country.</p>
+                                    <p>It has a growing economy.</p>
+
+                                    <p>Reasons to choose MBBS/BDS in India</p>
+                                    <ul>
+                                        <li>It is easy to get involved on campus.</li>
+                                        <li>It has great opportunities for global networking.</li>
+                                        <li> It provides an education beyond the walls of a classroom. </li>
+                                        <li>It has a complex history worth knowing about. </li>
+                                        <li>It is filled with affordable travel opportunities.</li>
+                                        <li> It will provide you with enlightenment (or something like it).</li>
+                                        <li>It will require significant readjustment.</li>
+                                        <li>It will never leave you.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="carriculam" role="tabpanel" aria-labelledby="carriculam-tab">
+                            <div class="course-tab-content">
+                                <div class="course-curriculam">
+                                    <p><strong>Indian Higher Education</strong><br>
+                                        Higher education in India starts after passing the higher secondary
+                                        education or the 12th standard. Depending on what you study, attaining
+                                        your degree in India can take three to five years. Postgraduate courses
+                                        are generally two to three years long. After completing a postgraduate
+                                        degree, there is the option of continuing on with doctoral studies and
+                                        research at various educational institutes.</p>
+
+                                    <p>Due to the limited number of universities in relation to the large number
+                                        of applicants, universities work with affiliated colleges. These provide
+                                        education and issue degrees under the name of the affiliated university.
+                                        There are approximately 20,000 colleges, 42 central universities, 275
+                                        State universities, 130 Deemed Universities and 93 Institutes of
+                                        National importance in the Indian higher education system.</p>
+
+
+                                    <p>The private sector within Indian higher education is also strong and
+                                        steadily growing. These institutes offer education at everything from
+                                        certificate and diploma level to undergraduate and postgraduate
+                                        education. These private institutions originally started a trend for
+                                        distance education, which is now very popular throughout India. Today
+                                        many prestigious </p>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Indian Universities</a></li>
+                                    </ul>
+                                    <p> offer distance programs and some such as Indira Gandhi National Open
+                                        University offer only distance programs, and is one of the largest in
+                                        student enrollment.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="instructor" role="tabpanel" aria-labelledby="instructor-tab">
+                            <div class="course-tab-content">
+                                <p>It is a developing country.</p>
+
+                                <p>Unless particularly well traveled, many college students from the
+                                    industrialized world have not had the privilege of living in a developing
+                                    country. Many study abroad programs in India will be a crash course in the
+                                    nature of the social, economic, and infrastructural challenges that are
+                                    faced by the majority of the world’s population living in poverty today.
+                                    With nearly 1.3 billion people, India is one of the world’s largest and
+                                    poorest countries. Exposure to urban life in India will be a very grounding
+                                    experience to say the least.</p>
+
+                                <p>It has a growing economy.</p>
+
+                                <p>Reasons to choose MBBS/BDS in India</p>
+                                <ul>
+                                    <li>It is easy to get involved on campus.</li>
+                                    <li>It has great opportunities for global networking.</li>
+                                    <li> It provides an education beyond the walls of a classroom. </li>
+                                    <li>It has a complex history worth knowing about. </li>
+                                    <li>It is filled with affordable travel opportunities.</li>
+                                    <li> It will provide you with enlightenment (or something like it).</li>
+                                    <li>It will require significant readjustment.</li>
+                                    <li>It will never leave you.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                            <div class="course-tab-content">
+                                <div class="course-review">
+                                    <h3 class="heading-title">MBBS in India Rating</h3>
+                                    <p>5.00 average rating based on 7 rating</p>
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-sm-4">
+                                            <div class="rating-box">
+                                                <div class="rating-number">5.0</div>
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span>(720 Review)</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="review-wrapper">
+
+                                                <div class="single-progress-bar">
+                                                    <div class="rating-text">
+                                                        5 <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 100%"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                    <span class="rating-value">7</span>
+                                                </div>
+
+                                                <div class="single-progress-bar">
+                                                    <div class="rating-text">
+                                                        4 <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 0%"
+                                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                    <span class="rating-value">0</span>
+                                                </div>
+
+                                                <div class="single-progress-bar">
+                                                    <div class="rating-text">
+                                                        4 <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 0%"
+                                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                    <span class="rating-value">0</span>
+                                                </div>
+
+                                                <div class="single-progress-bar">
+                                                    <div class="rating-text">
+                                                        4 <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 0%"
+                                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                    <span class="rating-value">0</span>
+                                                </div>
+
+                                                <div class="single-progress-bar">
+                                                    <div class="rating-text">
+                                                        4 <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 0%"
+                                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                    <span class="rating-value">0</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comment-form-area">
+                                        <h3 class="heading-title">Write a Review</h3>
+                                        <div class="rating-icon">
+                                            <h6 class="title">Rating Here</h6>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <form class="comment-form">
+                                            <div class="row g-5">
+                                                <div class="form-group col-lg-6">
+                                                    <input type="text" name="comm-title" id="comm-title"
+                                                        placeholder="Review Title">
+                                                </div>
+                                                <div class="form-group col-lg-6">
+                                                    <input type="text" name="comm-name" id="comm-name"
+                                                        placeholder="Reviewer name">
+                                                </div>
+                                                <div class="form-group col-12">
+                                                    <input type="email" name="comm-email" id="comm-email"
+                                                        placeholder="Reviewer email">
+                                                </div>
+                                                <div class="form-group col-12">
+                                                    <textarea name="comm-message" id="comm-message" cols="30" rows="5"
+                                                        placeholder="Review summary"></textarea>
+                                                </div>
+                                                <div class="form-group col-12">
+                                                    <button type="submit" class="edu-btn submit-btn">Submit
+                                                        Review <i class="icon-4"></i></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- detsils -->
+
+    <!-- get start now -->
+
+                             <!-- important MBBS -->
+                             <div class="container edublink-animated-shape">
+                                <div class=" section-center sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                    <h2 class="title">Important <span class="color-primary">MBBS </span>Education</h2>
+                                </div>
+                                <section class="edu-section-gap faq-page-area" style="padding: 0px 0px;">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="tab-content faq-page-tab-content" id="faq-accordion">
+                                                    <div class="tab-pane fade show active" id="gn-ques" role="tabpanel">
+                                                        <div class="faq-accordion">
+                                                            <div class="accordion">
+                                                                <div class="accordion-item">
+                                                                    <h5 class="accordion-header">
+                                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question-1" aria-expanded="true">
+                                                                            Scholarships in India Step 1?
+                                                                        </button>
+                                                                    </h5>
+                                                                    <div id="question-1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion">
+                                                                        <div class="accordion-body">
+                                                                            <p><b>COMPEX Scholarship Scheme:</b><br>
+                                                                                Under COMPEX Scheme, Embassy of India provides admission
+                                                                                with scholarships to undergraduate courses in
+                                                                                Engineering (BE), Pharmacy (B. Pharmacy), Agriculture
+                                                                                (B.Sc-Agri), Dairy Technology (B.Sc. – DT) and B.Sc.
+                                                                                (Nursing) in Indian Universities and Institutes.
+                                                                            </p>
+                                                                            <p>Due to the requirement of NEET score, MBBS/BDS seats
+                                                                                (Self-finance) are no longer included in the COMPEX
+                                                                                scheme entrance exam. When &amp; How to Apply: Scheme is
+                                                                                announced tentatively in April/May. Notice of COMPEX
+                                                                                Scholarship Scheme is advertised in local newspapers and
+                                                                                uploaded on Embassy of India’s website
+                                                                                (www.indianembassy.org.np).</p>
+                                                                            <p><b>AYUSH Scholarship Scheme:</b><br>
+                                                                                Under AYUSH scholarship scheme, Embassy of India
+                                                                                provides admission to Undergraduate/Post Graduate/PhD
+                                                                                courses in Ayurveda/Unani/Homeopathy system of medicines
+                                                                                for study in Indian institutions.
+                                                                                <b>When &amp; How to Apply:</b> Scheme is announced
+                                                                                tentatively in May/June every year. Notice is advertised
+                                                                                in local newspapers and is uploaded on Embassy of
+                                                                                India’s website (www.indianembassy.org.np) nearer the
+                                                                                time of opening of this scheme.
+                                                                            </p>
+                                                                            <p><b>APS Scholarship Scheme:</b><br>
+                                                                                Under APS Scholarship Scheme, Embassy of India provides
+                                                                                admission to School level courses starting from Class VI
+                                                                                to IX and XI ( boys and girls) in Army Public Schools
+                                                                                (APS) in APS Pithoragarh (Uttarakhand), Class VI to IX
+                                                                                (boys only) for APS Dhaula Kuan (Delhi), and class VI to
+                                                                                IX (girls only ) for APS Noida (UP).
+                                                                                <b>When &amp; How to Apply:</b> Scheme is announced
+                                                                                tentatively in January/February every year. Notification
+                                                                                for submission of forms is put up on Indian Embassy
+                                                                                notice board.
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                
+                                                                <div class="accordion-item">
+                                                                    <h5 class="accordion-header">
+                                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question-3" aria-expanded="false">
+                                                                            Scholarships in India Step 2?
+                                                                        </button>
+                                                                    </h5>
+                                                                    <div id="question-3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                                                        <div class="accordion-body">
+                                                                            <p><b>General Scholarship Scheme (GSS):</b><br>
+                                                                                Under GSS, Embassy of India provides admission to
+                                                                                under-graduate courses in BBA, BCA, BA, BA (Hons),
+                                                                                B.Sc., B.Com, BA (Music/Performing Arts) under General
+                                                                                Scholarship Scheme in Indian Universities/Institutes.
+                                                                                <br><b>When &amp; How to Apply:</b> Scheme is announced
+                                                                                tentatively in December/January every year. In this
+                                                                                regard, a Notice is put up on notice board and uploaded
+                                                                                on Embassy of India’s website (www.indianembassy.org.np)
+                                                                                nearer the time of opening of this scheme.
+                                                                            </p>
+                                                                            <p><b>SAARC Scholarship Scheme:</b><br>
+                                                                                Under this scheme, admission is provided to B.Sc
+                                                                                (Hospitality &amp; Hotel Management) course in Indian
+                                                                                institutions.
+                                                                                <br><b>When &amp; How to Apply:</b> Scheme is announced
+                                                                                tentatively in December/January every year. In this
+                                                                                regard, a Notice is put up on notice board and uploaded
+                                                                                on Embassy of India’s website (www.indianembassy.org.np)
+                                                                                nearer the time of opening of this scheme.
+                                                                            </p>
+                                                                            <p><b>Silver Jubilee Scholarship Scheme (SJSS):</b><br>
+                                                                                Under SJSS, admission is provided to Nepalese candidates
+                                                                                for MBA, MCA, MA, M.Sc &amp; Ph.D in all streams except
+                                                                                Engineering, Agriculture, Medicine and Para-medical
+                                                                                courses in Indian Universities and Institutions.
+                                                                                <br><b>When &amp; How to Apply:</b> Scheme is announced
+                                                                                tentatively in December/January every year. In this
+                                                                                regard, a Notice is put up on notice board and uploaded
+                                                                                on Embassy of India’s website (www.indianembassy.org.np)
+                                                                                nearer the time of opening of this scheme.
+                                                                            </p>
+                                                                            <p><b>Dr. Homi J. Bhabha Scholarship Scheme:</b><br>
+                                                                                Under Dr. Homi J. Bhabha Scholarship Scheme, admission
+                                                                                is provided to Nepalese candidates in Master of
+                                                                                Engineering (ME) course in Indian Universities and
+                                                                                Institutions.
+                                                                                <br><b>When &amp; How to Apply:</b> Scheme is tentatively
+                                                                                announced in December/January every year. In this
+                                                                                regard, a Notice is put up on notice board and uploaded
+                                                                                on Embassy of India’s website (www.indianembassy.org.np)
+                                                                                nearer the time of opening of this scheme.
+                                                                            </p>
+                                                                            <p><b> Nepal Aid Fund Scholarship Scheme :</b><br>
+                                                                                Under Nepal Aid Fund Scholarship Scheme, admission is
+                                                                                provided to Nepalese candidates in M.Sc (Agriculture) in
+                                                                                Indian Universities and Institutions. When &amp; How to
+                                                                                Apply: Scheme is tentatively announced in
+                                                                                December/January every year. In this regard, a Notice is
+                                                                                put up on notice board and uploaded on Embassy of
+                                                                                India’s website (www.indianembassy.org.np) nearer the
+                                                                                time of opening of this scheme.
+                                                                            </p>
+                                                                            <p><b>Mahatma Gandhi Scholarship Scheme</b><br>
+                                                                                Under Mahatma Gandhi Scholarship Scheme, Embassy of
+                                                                                India provides scholarships to Nepalese students
+                                                                                enrolled in Class-XI in recognized colleges/schools in
+                                                                                Nepal. Scholarship Amount Selected students will get a
+                                                                                scholarship of NRs. 2,000/- per month in the first year.
+                                                                                This will be continued in the second year also, provided
+                                                                                the awardee gets 50% or above marks in Class-XI. The
+                                                                                scholarship will be discontinued if the percentage of
+                                                                                marks obtained by the awardee falls below 50% in class
+                                                                                XI or for any other reason that the Embassy may deem
+                                                                                necessary.
+                                                                                <br><b>When &amp; How to Apply:</b> Scheme is tentatively
+                                                                                announced in November/December every year. In this
+                                                                                regard, announcement is made through local newspapers
+                                                                                and uploaded on Embassy of India’s website
+                                                                                (www.indianembassy.org.np) nearer the time of opening of
+                                                                                this scheme.
+                                                                            </p>
+                                                                            <p><b>Golden Jubilee Scholarship Scheme</b><br>
+                                                                                Under Golden Jubilee Scholarship Scheme, Embassy of
+                                                                                India provides scholarships to students enrolled in
+                                                                                Bachelor 1styear/1st semester of undergraduate courses
+                                                                                in recognized educational institutions in Nepal in the
+                                                                                fields of medicines, engineering and other disciplines.
+                                                                                Scholarship Amount: Selected students in
+                                                                                medical/engineering disciplines will get a scholarship
+                                                                                of NRs. 4,000/-per month. The scholarship for students
+                                                                                in other disciplines will be NRs. 3,000/- per month. The
+                                                                                scholarship will be discontinued if the percentage of
+                                                                                marks obtained by the awardees falls below 50% in each
+                                                                                subsequent year or for any other reason that the Embassy
+                                                                                may deem necessary.
+                                                                                <br><b>When &amp; How to Apply:</b> Scheme is tentatively
+                                                                                announced in November/December every year. In this
+                                                                                regard, announcement is made through local newspapers
+                                                                                and uploaded on Embassy of India’s website
+                                                                                (www.indianembassy.org.np) nearer the time of opening of
+                                                                                this scheme.
+                                                                            </p>
+                                                                            <p><b>MBBS/BDS &amp; PG Medical (Self-Financing): </b><br>
+                                                                                Under self-finance scheme, a limited number of seats for
+                                                                                MBBS and PG Medical courses for study in India are
+                                                                                offered. The PG Medical course is allotted at the
+                                                                                Banaras Hindu University (BHU), Varanasi. NEET-UG/PG
+                                                                                score is mandatory for those who seek admission to
+                                                                                MBBS/BDS and PG Medical courses in India. Fees for study
+                                                                                of the medical courses under self-finance in India are
+                                                                                decided by respective institutes/colleges/Universities.
+                                                                                Submission of application form for MBBS/BDS is announced
+                                                                                on Embassy of India’s website and submission of
+                                                                                application form for PG Medical is announced on the
+                                                                                Embassy of India’s notice board during February/March.
+                                                                            </p>
+                                                                            <p><b>Bachelor of Engineer (BE) courses (Self-financing):
+                                                                                </b><br>
+                                                                                Applications are also invited for BE Self-finance during
+                                                                                February/March for study in India. Notification for
+                                                                                submission of application form is made on the Indian
+                                                                                Embassy website. Fees for study of BE courses under
+                                                                                self-finance in India are decided by respective
+                                                                                institutes/colleges/Universities. BE Self-finance does
+                                                                                not come under COMPEX scheme.
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                            
+                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- <ul class="shape-group">
+                                    <li class="shape-1 sal-animate" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
+                                        <img class="rotateit" src="assets/images/about/shape-13.png" alt="shape">
+                                    </li>
+                                    <li class="shape-2 scene sal-animate" data-sal-delay="500" data-sal="fade" data-sal-duration="200" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+                                        <span data-depth="0.85" style="transform: translate3d(10.6px, -31.6px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"></span>
+                                    </li>
+                                </ul> -->
+                            </div>
+                             <!-- important MBBS -->
+
+
+
+
+                             <div class="row justify-content-center">
+                                <div class="col-lg-7">
+                                    <div class="section-center sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                        <h2 class="title">
+                                            Get Your
+                                            <span class="color-secondary">Admission in India </span> Through
+                                            <br />
+                                            Merit, Management &amp; NRI Quota.
+                                        </h2>
+                                        <a href="contact-us.php" class="edu-btn">Get started now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>info@example.com
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email" />
+                            <a href="signup.html"> <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+               SignUp                        </button>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6  mb-md-0">
+                         <a  href="#">www.educalller.com</a> &copy;All
+                        Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                       
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa-solid fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+    <!-- Include the odometer.js library -->
+    <script src="./odometer-master/odometer.min.js"></script>
+    <script src="./odometer-master/odometer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>eLEARNING - eLearning HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary">
+                   <img src="img/educaller.png" alt="" style="height: 3rem;">edcaller
+                </h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                            target="_blank">About</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="about.html" class="dropdown-item">Introduction</a>
+                            <a href="testimonial.html" class="dropdown-item">Company Profile</a>
+                            <a href="mission.html" class="dropdown-item">Mission and Vision</a>
+                            <a href="service.html" class="dropdown-item">Our Service</a>
+                            <a href="team.html" class="dropdown-item">Our Team</a>
+                            <a href="contact.html" class="dropdown-item">Director Message</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="courses.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Course</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="BBA.html" class="dropdown-item">MBBS (NEET UG)</a>
+                            <a href="BBA.html" class="dropdown-item">MD/MS (NEET PG)</a>
+                            <a href="BBA.html" class="dropdown-item">Engineering</a>
+                            <a href="BBA.html" class="dropdown-item">Management</a>
+                            <a href="BBA.html" class="dropdown-item">Law</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="team.html" class="dropdown-item">Our Team</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="BBA.html" class="dropdown-item">BBA/BMS</a>
+                            <a href="BBA.html" class="dropdown-item">Nursing</a>
+                            <a href="BBA.html" class="dropdown-item">Paramedical</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="study-india.html" class="nav-link">Study India</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="study-abroad.html" class="nav-link">Study Abroad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallary.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <a href="" class="btn btn-primary py-4 px-lg-3 d-none d-lg-block">Enquire-now<i
+                        class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <marquee width="100%" behavior="scroll" direction="left">
+        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px">
+            <a href="https://viteee.vit.ac.in/" target="_blank">VIT VELLORE BTECH ADMISSION OPEN FOR 2024</a>
+            ||
+        </h6>
+    </marquee>
+
+    <marquee width="100%" behavior="scroll" direction="left">
+        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px">
+            <a href="https://www.pessat.com/Welcome.aspx" target="_blank">PES UNIVERSITY, BANGALORE BTECH ADMISSION
+                OPEN, LAST DATE 15 MARCH
+                2024</a>
+            ||
+        </h6>
+    </marquee>
+
+    <marquee width="100%" behavior="scroll" direction="left">
+        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px">
+            <a href="https://apply.manipal.edu/" target="_blank">MANIPAL BTECH ADMISSION OPEN FOR 2024</a>
+            ||
+        </h6>
+    </marquee>
+
+    <marquee width="100%" behavior="scroll" direction="left">
+        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px">
+            <a href="https://www.bitsadmission.com/bitsatmain.aspx?id=11012016" target="_blank">BITS Pilani BTECH
+                ADMISSION OPEN FOR 2024. Deadline 11th April
+                2024</a>
+            ||
+        </h6>
+    </marquee>
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">About Us</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="#">Home</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="#">Pages</a>
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                About
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt=""
+                            style="object-fit: cover" />
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">
+                        About Us
+                    </h6>
+                    <h1 class="mb-4">Welcome to <span>aaryashedu.in</span></h1>
+                    <p class="mb-4">
+                        Aaryash Educational Services is an innovative Education Consultant
+                        <br />
+                        in Ghaziabad (Uttar Pradesh) providing solutions to students for
+                        <br />
+                        pursuing their Under Graduate and Post Graduate studies at <br />
+                        universities, colleges, and schools in India and overseas.
+                    </p>
+                    <p class="mb-4">
+                        We are passionate about ensuring students choose the right
+                        solution for their educational needs – Consultancy, direct
+                        admission to an educational institution, fee management, etc. And,
+                        because our services are individually designed to meet your exact
+                        specifications, you will not have to compromise your initial
+                        vision.
+                    </p>
+                    <p class="mb-4">
+                        It is one of the oldest and leading ISO 9001-2008 certified
+                        admission consultants in Ghaziabad. We have guided thousands of
+                        aspiring students toward achieving their goals. We have also
+                        proved our global presence by guiding aspiring MBBS students to
+                        prominent universities Abroad.
+                    </p>
+
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- total count -->
+
+    <!-- total count -->
+
+                               
+                          <!-- benifit -->
+                          
+    <div class="container">
+        <div class="row g-5 row--45">
+            <div class="col-lg-12 sal-animate" data-sal-delay="50" data-sal="slide-up" data-sal-duration="1000">
+                <div class="edu-faq-content">
+                    <div class="section-center">
+                        <span class="pre-title">WHY CHOOSE AARYASH EDUCATIONAL</span>
+                        <h2 class="title" style="font-size: 23px">
+                            The Best Beneficial Side of Aaryash Edu
+                        </h2>
+                        <span class="shape-line"><i class="icon-19"></i></span>
+                    </div>
+                    <div class="faq-accordion" id="faq-accordion">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed neumorphism-btn" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+                                        A little bit more about Aaryash Educational Consultancy
+                                                            Services ?
+                                    </button>
+                                </h5>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#faq-accordion" style="">
+                                    <div class="accordion-body">
+                                        <p>
+                                            It is one of the oldest and leading ISO 9001-2008
+                                            certified admission consultants in Ghaziabad. We have
+                                            guided thousands of aspiring students toward achieving
+                                            their goals. We have also proved our global presence by
+                                            guiding aspiring MBBS students to prominent universities
+                                            Abroad.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed neumorphism-btn" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                                        Aaryash Educational Professional Management &amp; Counselors ?
+                                    </button>
+                                </h5>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#faq-accordion" style="">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Highly experienced and well-qualified professional
+                                            management & counselors are the wind beneath the wings
+                                            of this organization. Due to our experience in this
+                                            industry we understand the specific requirements of the
+                                            students & parents thus we have recruited counselors of
+                                            different streams for different courses so that we can
+                                            give the in-depth information’s about the course
+                                            students wish to study.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed neumorphism-btn" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                                        Aaryash Educational Commitments ?
+                                    </button>
+                                </h5>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#faq-accordion" style="">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Our team’s everlasting efforts and commitments are the foundation behind the
+                                            1000+ successful applications that have attained their dreams of studying in
+                                            the best institute in India, placing more with each year that goes by. Our
+                                            commitment is not only to our country but also to the world’s education
+                                            arena. Our top focus is at par excellence with improvement in each step we
+                                            take giving 100 per cent in whatever we do.
+
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-7">
+            <div class="section-center sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <h2 class="title">Get Your <span class="color-secondary">Admission in India </span>
+                    Through <br> Merit, Management &amp; NRI Quota.</h2>
+                <a href="contact.html" class="edu-btn">Get started now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+                                        <!-- benifit -->
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>info@example.com
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email" />
+                            <a href="signup.html"> <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+               SignUp                        </button>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6  mb-md-0">
+                         <a  href="#">www.educalller.com</a> &copy;All
+                        Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                       
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa-solid fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/sal.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
