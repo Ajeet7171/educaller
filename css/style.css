@@ -252,154 +252,6 @@ body {
 
 /* homepage */
 
-#ban{
-  margin-bottom:5rem;
-
-
-    padding-left: 20px; 
-    padding-right: 20px; 
-
-  
- }
-
-.color-secondary{
-color:#1ab69d;
-}
-
- 
-
-.banner-gallery {
-  text-align: right;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px; /* Adjust the gap value as needed */
-  position: relative;
-  z-index: 1;
-}
-.banner-btn a{
-  margin-left:1rem;
-}
-.banner-btn {
-  display: flex;
-  justify-content: flex-start; /* Start on the left side */
-  margin-top: 1rem;
-  margin-left:-1.2rem;
-}
-
-
-.thumbnail {
-  position: relative;
-  overflow: hidden;
-  
-}
-
-.thumbnail img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-  border-radius: 50px 10px 50px 10px;
-}
-
-.thumbnail:hover img {
-  transform: scale(1.1); /* Example scale value, adjust as needed */
-  border-radius: 50px 10px 50px 10px;
-}
-
-.online-support-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #ffffff; /* Change the background color as needed */
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transform: translateY(100%);
-  opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.thumbnail:hover .online-support-box {
-  transform: translateY(0);
-  opacity: 1;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Example box shadow, adjust as needed */
-}
-
-
-.online-support .inner  {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 30px;
-  margin-top:-4rem;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-shadow: 0 20px 40px rgba(0,0,0,.1);
-  background: #FFF;
-  border-radius: 50px 10px 50px 10px;
-}
-.online-support .icon{
-  align-items: center;
-    border-radius: 50%;
-    margin-right: 15px;
-    color: #1ab69d;
-    font-size: 22px;
-}
-.banner-content h1{
-  font-size: 37px;
-}
-/* Media Queries for Responsiveness */
-@media (max-width: 767px) {
-  .banner-btn {
-    flex-wrap: nowrap; /* Prevent items from wrapping in the mobile view */
-  }
-
-  .banner-btn a {
-    margin-right: 0; /* Remove margin for anchors in the mobile view */
-    margin-bottom: 0.5rem;
-    font-size:0.7rem;
-    
-    }
-    .banner-content h1{
-      font-size:1.5rem;
-    }
-    .banner-content p{
-      text-align:center;
-    }
-
-  .banner-gallery {
-    text-align: right;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    position: relative;
-    z-index: 1;
-  }
-  .banner-gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio while filling the container */
-    transition: transform 0.3s ease;
-    border-radius: 50px 10px 50px 10px;
-  }
-
-  .online-support .inner {
-    padding: 20px;
-  }
-
-  .container {
-    margin-bottom: 20px; /* Add space at the bottom of the main div */
-  }
-  .online-support{
-    display:none;
-  }
-}
-
-
 
 /* Add your styles for other elements within the shape-group as needed */
 
@@ -1826,87 +1678,104 @@ counter-item:after {
   color: #3498db;
 }
                                     /* head start */
-
-/* Gallery grid container with space on left, right, and bottom */
-.isotope-list.gallery-grid-wrap {
-    position: relative;
-    height: 1015.8px;
-    margin: 0 20px 20px; /* Adjust the space as needed */
-    margin-bottom:15rem;
-  
+          
+                                    .gallery {
+                                      display: flex;
+                                      flex-wrap: wrap;
+                                      margin: -10px;
+                                      margin-bottom:5rem;
+                                      padding-left:6rem;
+                                      padding-right:6rem;
+                                    }
+                                    
+                                    .gallery-item {
+                                      flex: 0 0 calc(33.3333% - 20px);
+                                      overflow: hidden;
+                                      position: relative;
+                                      margin: 10px;
+                                      cursor: pointer;
+                                      transition: transform 0.3s ease-in-out;
+                                    }
+                                    
+                                    .gallery-item img {
+                                      width: 100%;
+                                      height: auto;
+                                      display: block;
+                                      border-radius: 8px;
+                                    }
+                                    
+                                    .overlay {
+                                      position: absolute;
+                                      top: 0;
+                                      left: 0;
+                                      width: 100%;
+                                      height: 100%;
+                                      display: flex;
+                                      align-items: center;
+                                      justify-content: center;
+                                      background: rgba(0, 0, 0, 0.5);
+                                      color: #fff;
+                                      opacity: 0;
+                                      transition: opacity 0.3s ease-in-out;
+                                    }
+                                    
+                                    .gallery-item:hover {
+                                      transform: scale(1.1);
+                                    }
+                                    
+                                    .gallery-item:hover .overlay {
+                                      opacity: 1;
+                                    }
+                                    /* Add the following styles to your existing CSS */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
 }
 
-/* Individual gallery items */
-.edu-gallery-grid {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    transition: transform 0.5s ease-in-out; /* Transition for blur effect */
-    width: calc(33.3333% - 10px); /* 10px margin between items */
-    margin-right: 10px; /* Adjust the space between items */
-    margin-bottom: 10px; /* Adjust the space at the bottom */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
 }
 
-/* Add a hover effect to the gallery items */
-.edu-gallery-grid:hover {
-    transform: scale(1.1); /* Enlarge the image on hover */
-    background-color: #31b978; /* Background color on hover */
-}
-
-/* Thumbnail styling */
-.thumbnail {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    transition: filter 0.5s ease-in-out; /* Transition for blur effect */
-}
-
-/* Apply blur effect on hover */
-.edu-gallery-grid:hover .thumbnail {
-    filter: blur(5px); /* Adjust the blur intensity */
-}
-
-.thumbnail img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Zoom icon styling */
-.zoom-icon {
+.close {
   position: absolute;
-  top: 50%;
-  left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0; /* Initially hidden */
-    font-size: 24px;
-    background-color: #fff;
-    cursor: pointer;
-    border-radius:3rem;
-    width:2rem;
-    
-}
-.zoom-icon i{
-  margin-left:.35rem;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-/* Show the plus icon on hover */
-.edu-gallery-grid:hover .zoom-icon {
-    opacity: 1;
+.close:hover {
+  color: #bbb;
 }
 
-/* Set a delay for the fade-in effect */
-.edu-gallery-grid:nth-child(1):hover .zoom-icon {
-    transition-delay: 0.1s;
-}
-
-.edu-gallery-grid:nth-child(2):hover .zoom-icon {
-    transition-delay: 0.2s;
-}
-
-.edu-gallery-grid:nth-child(3):hover .zoom-icon {
-    transition-delay: 0.3s;
-}
+                                    @media only screen and (max-width: 768px) {
+                                      .gallery-item {
+                                        flex: 0 0 calc(100% - 20px); /* Two items per row, with 20px margin on both sides */
+                                        overflow: hidden;
+                                        position: relative;
+                                        margin: 10px;
+                                        cursor: pointer;
+                                        transition: transform 0.3s ease-in-out;
+                                      }
+                                      .gallery{
+                                        /* padding:0; */
+                                      }
+                                      }
+                                    
+                                    
 
 /* about-total-count */
 

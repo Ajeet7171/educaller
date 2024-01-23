@@ -95,7 +95,22 @@
         e.stopPropagation();
     });
 });
- 
+//  Gallery
+function openImage(src) {
+    const modal = document.getElementById('modal');
+    const modalImage = document.getElementById('modalImage');
+    
+    modal.style.display = 'block';
+    modalImage.src = src;
+  }
+  
+  function closeImage() {
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none';
+  }
+  
+  
+//  Gallery
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
