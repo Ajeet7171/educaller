@@ -24,9 +24,9 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HjxjsrBCZhV2ZJOZ7/dzcyD5jU2YF0lLoFs8T99VZjAx+pxbERjH/66I5P1Jm7d"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
         <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
@@ -41,8 +41,8 @@
 
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <!-- <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" /> -->
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -52,9 +52,13 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/home.css" rel="stylesheet" />
     <script src="https://cdn.rawgit.com/HubSpot/odometer/0.4.8/odometer.js"></script>
-    <script>
-        sal();
-      </script>
+
+<script>
+    function closePopup() {
+        document.getElementById('popUpMain').style.display = 'none';
+    }
+</script>
+
     
 
 </head>
@@ -73,7 +77,26 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
     <!-- Pop form -->
-    <div class="modal fade" id="inquiryModal" tabindex="-1" role="dialog" aria-labelledby="inquiryModalLabel"
+    <div class="popup-overlay"></div>
+    <div id="popUpMain" style="display: block;">
+        <div id="popup" style="width:400px; height:400px; border-radius:100%;">
+            <img src="img/educaller.png" alt="" width="100px" height="30px" style="margin-top: 20px;">
+            <h2 id="heading" style="font-family: montserrat; font-size:20px; margin-bottom:10px; margin-top:10px;"> <u>Enquiry Now</u> </h2>
+            <form action="savedata.php" method="post">
+                <input type="text" name="name" placeholder="Name..." required="" style="border: 1px solid #0675a8; padding: 0 10px; height:40px; margin-bottom:10px;">
+                <input type="text" name="phone" placeholder="Phone..." required="" style="border: 1px solid #0675a8; padding: 0 10px; height:40px; margin-bottom:10px;">
+                <input type="email" name="email" placeholder="Email..." required="" style="border: 1px solid #0675a8; padding: 0 10px; height:40px; margin-bottom:10px;">
+                <input type="text" name="city" placeholder="City..." required="" style="border: 1px solid #0675a8; padding: 0 10px; height:40px; margin-bottom:10px;"><br>
+            
+                <div class="button-contenir">
+                <button id="cancel" class="edu-btn-1 ">No Thanks</button>
+                <button id="submit" name="submit" class="edu-btn-1 ">Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- <div class="modal fade" id="inquiryModal" tabindex="-1" role="dialog" aria-labelledby="inquiryModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
@@ -87,7 +110,7 @@
             </div>
             <div class="modal-body">
                 
-                <!-- Your form content goes here -->
+            
                 <form>
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
@@ -115,9 +138,13 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
     <!-- Pop form -->
+
+
+    <!-- Header -->
+
     <header class="edu-header header-style-3">
         <div class="header-top-bar">
             <div class="container">
@@ -231,14 +258,14 @@
 
    
     <marquee width="100%" behavior="scroll" direction="left">
-        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px ">
+        <h6 style="font-family: montserrat; color: #0675a8; font-size: 20px ">
             <a href="https://viteee.vit.ac.in/" target="_blank">VIT VELLORE BTECH ADMISSION OPEN FOR 2024</a>
             ||
         </h6>
     </marquee>
 
     <marquee width="100%" behavior="scroll" direction="left">
-        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px ">
+        <h6 style="font-family: montserrat; color: #0675a8; font-size: 20px ">
             <a href="https://www.pessat.com/Welcome.aspx" target="_blank">PES UNIVERSITY, BANGALORE BTECH ADMISSION
                 OPEN, LAST DATE 15 MARCH
                 2024</a>
@@ -247,14 +274,14 @@
     </marquee>
 
     <marquee width="100%" behavior="scroll" direction="left">
-        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px ">
+        <h6 style="font-family: montserrat; color: #0675a8; font-size: 20px ">
             <a href="https://apply.manipal.edu/" target="_blank">MANIPAL BTECH ADMISSION OPEN FOR 2024</a>
             ||
         </h6>
     </marquee>
 
     <marquee width="100%" behavior="scroll" direction="left">
-        <h6 style="font-family: montserrat; color: #7401a2; font-size: 20px ">
+        <h6 style="font-family: montserrat; color: #0675a8; font-size: 20px ">
             <a href="https://www.bitsadmission.com/bitsatmain.aspx?id=11012016" target="_blank">BITS Pilani BTECH
                 ADMISSION OPEN FOR 2024. Deadline 11th April
                 2024</a>
@@ -1176,13 +1203,13 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa-solid fa-angle-up"></i></a>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sal.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <!-- <script src="lib/wow/wow.min.js"></script> -->
+    <!-- <script src="lib/easing/easing.min.js"></script> -->
+    <!-- <script src="lib/waypoints/waypoints.min.js"></script> -->
+    <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sal.js"></script> -->
 
     <!-- Include the odometer.js library -->
 

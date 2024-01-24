@@ -12,9 +12,7 @@
     spinner();
     
     
-    // Initiate the wowjs
-    new WOW().init();
-
+  
 
     // Sticky Navbar
     $(window).scroll(function () {
@@ -72,29 +70,7 @@
     // nav
 
 
- $$(document).ready(function() {
-    // Toggle mobile menu visibility
-    $('.hamberger-button').click(function() {
-        $('.mobile-menu').slideToggle();
-    });
 
-    // Close mobile menu when a menu item is clicked
-    $('.mobile-menu a').click(function() {
-        $('.mobile-menu').slideUp();
-    });
-
-    // Close mobile menu when clicking outside the menu
-    $(document).on('click', function(e) {
-        if (!$(e.target).closest('.mobile-menu').length && !$(e.target).closest('.hamberger-button').length) {
-            $('.mobile-menu').slideUp();
-        }
-    });
-
-    // Prevent menu close when clicking on the menu itself
-    $('.mobile-menu').click(function(e) {
-        e.stopPropagation();
-    });
-});
 //  Gallery
 function openImage(src) {
     const modal = document.getElementById('modal');
@@ -113,63 +89,43 @@ function openImage(src) {
 //  Gallery
 
     // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        margin: 24,
-        dots: true,
-        loop: true,
-        nav : false,
-        responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
-            }
-        }
-    });
+  
     
 })(jQuery);
 // pop form
-document.addEventListener("DOMContentLoaded", function () {
-    var inquiryModal = new bootstrap.Modal(document.getElementById('inquiryModal'), {
-        backdrop: 'static',
-        keyboard: false
-    });
-    inquiryModal.show();
+
+function showPopup() {
+    var popupMain = document.getElementById('popUpMain');
+    var overlay = document.getElementById('overlay');
+    var hasSeenPopup = sessionStorage.getItem('hasSeenPopup');
+
+    if (!hasSeenPopup) {
+        popupMain.style.display = 'block';
+        overlay.style.display = 'block';
+    }
+}
+
+function closePopup() {
+    sessionStorage.setItem('hasSeenPopup', 'true');
+    document.getElementById('popUpMain').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    var cancelBtn = document.getElementById('cancel');
+    if (cancelBtn) {
+        cancelBtn.addEventListener('click', closePopup);
+    }
 });
+
+// Call showPopup on page load
+window.onload = showPopup;
+
 // pop form
 // total-count
 // script.js
 
-document.addEventListener("DOMContentLoaded", function () {
-    odometerInit();
-});
 
-function odometerInit() {
-    const odometerItems = document.querySelectorAll('.odometer');
-    if (odometerItems.length > 0) {
-        odometerItems.forEach(function (item) {
-            let theme = item.dataset.theme;
-            if (!theme) {
-                theme = 'default';
-            }
-
-            let odometerInstance = new Odometer({
-                el: item,
-                theme: theme,
-                format: item.dataset.format
-            });
-            odometerInstance.render();
-            odometerInstance.update(item.dataset.final);
-        });
-    }
-}
 
 // total-count
 

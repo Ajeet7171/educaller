@@ -34,6 +34,25 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
 </head>
+<style>
+    /* Additional Responsive CSS */
+    
+
+/* Responsive layout for larger screens */
+@media (max-width: 768px) {
+    #about-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #about-main .col-12 {
+        flex: 0 0 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
+
+</style>
 
 <body>
     
@@ -178,14 +197,14 @@
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px">
+            <div class="row g-5" id="about-main">
+                <div class="col-12 wow fadeInUp" style="min-height: 400px">
                     <div class="position-relative h-100">
                         <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt=""
                             style="object-fit: cover" />
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 wow fadeInUp">
                     <h6 class="section-title bg-white text-start text-primary pe-3">
                         About Us
                     </h6>
@@ -213,17 +232,14 @@
                         proved our global presence by guiding aspiring MBBS students to
                         prominent universities Abroad.
                     </p>
-
+    
                     <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
                 </div>
             </div>
         </div>
     </div>
+    
     <!-- About End -->
-
-    <!-- total count -->
-
-    <!-- total count -->
 
                                
                           <!-- benifit -->
