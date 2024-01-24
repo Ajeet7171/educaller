@@ -2082,6 +2082,7 @@ counter-item:after {
 
       #popUpMain {
         position: fixed;
+        margin-top:5rem;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
