@@ -103,7 +103,8 @@
   /* Media Queries for Responsiveness */
   @media (max-width: 767px) {
     .banner-btn {
-      flex-wrap: nowrap; /* Prevent items from wrapping in the mobile view */
+      flex-wrap: nowrap;
+      justify-content: space-around; /* Prevent items from wrapping in the mobile view */
     }
   
     .banner-btn a {
